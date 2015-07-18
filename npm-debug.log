@@ -1,0 +1,90 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/nico/.nvm/versions/node/v0.12.4/bin/node',
+1 verbose cli   '/home/nico/.nvm/versions/node/v0.12.4/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@2.10.1
+3 info using node@v0.12.4
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec { raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/nico/Documents/unit/unit',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/nico/.npm/unit/0.0.0/package.tgz not in flight; packing
+9 verbose tar pack [ '/home/nico/.npm/unit/0.0.0/package.tgz',
+9 verbose tar pack   '/home/nico/Documents/unit/unit' ]
+10 verbose tarball /home/nico/.npm/unit/0.0.0/package.tgz
+11 verbose folder /home/nico/Documents/unit/unit
+12 info prepublish unit@0.0.0
+13 verbose addLocalTarball adding from inside cache /home/nico/.npm/unit/0.0.0/package.tgz
+14 silly cache afterAdd unit@0.0.0
+15 verbose afterAdd /home/nico/.npm/unit/0.0.0/package/package.json not in flight; writing
+16 verbose afterAdd /home/nico/.npm/unit/0.0.0/package/package.json written
+17 silly publish { name: 'unit',
+17 silly publish   version: '0.0.0',
+17 silly publish   description: '',
+17 silly publish   main: 'index.js',
+17 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+17 silly publish   repository: { type: 'git', url: 'git+https://github.com/unitjs/unit.git' },
+17 silly publish   author: '',
+17 silly publish   license: 'ISC',
+17 silly publish   bugs: { url: 'https://github.com/unitjs/unit/issues' },
+17 silly publish   homepage: 'https://github.com/unitjs/unit#readme',
+17 silly publish   readme: '# unit\n',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   gitHead: 'a2e02974535f27387564afa9a2815f762a1a8bd0',
+17 silly publish   _id: 'unit@0.0.0',
+17 silly publish   _shasum: '3f31a3b834366c6a038231ac3e6761979b0cca9f',
+17 silly publish   _from: '.' }
+18 verbose getPublishConfig undefined
+19 silly mapToRegistry name unit
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/unit
+23 verbose publish registryBase https://registry.npmjs.org/
+24 silly publish uploading /home/nico/.npm/unit/0.0.0/package.tgz
+25 verbose request uri https://registry.npmjs.org/unit
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 16:27:09
+28 verbose request id 2fb62051da1211e7
+29 http request PUT https://registry.npmjs.org/unit
+30 http 403 https://registry.npmjs.org/unit
+31 verbose headers { 'content-type': 'application/json',
+31 verbose headers   'cache-control': 'max-age=60',
+31 verbose headers   'content-length': '128',
+31 verbose headers   'accept-ranges': 'bytes',
+31 verbose headers   date: 'Sat, 18 Jul 2015 14:27:11 GMT',
+31 verbose headers   via: '1.1 varnish',
+31 verbose headers   connection: 'keep-alive',
+31 verbose headers   'x-served-by': 'cache-fra1229-FRA',
+31 verbose headers   'x-cache': 'MISS',
+31 verbose headers   'x-cache-hits': '0',
+31 verbose headers   'x-timer': 'S1437229629.919511,VS0,VE1995' }
+32 verbose request invalidating /home/nico/.npm/registry.npmjs.org/unit on PUT
+33 error publish Failed PUT 403
+34 verbose stack Error: "You cannot publish over the previously published version 0.0.0. Try bumping the version to 1.0.0" : unit
+34 verbose stack     at CachingRegistryClient.<anonymous> (/home/nico/.nvm/versions/node/v0.12.4/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:247:14)
+34 verbose stack     at Request._callback (/home/nico/.nvm/versions/node/v0.12.4/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+34 verbose stack     at Request.self.callback (/home/nico/.nvm/versions/node/v0.12.4/lib/node_modules/npm/node_modules/request/request.js:368:22)
+34 verbose stack     at Request.emit (events.js:110:17)
+34 verbose stack     at Request.<anonymous> (/home/nico/.nvm/versions/node/v0.12.4/lib/node_modules/npm/node_modules/request/request.js:1219:14)
+34 verbose stack     at Request.emit (events.js:129:20)
+34 verbose stack     at IncomingMessage.<anonymous> (/home/nico/.nvm/versions/node/v0.12.4/lib/node_modules/npm/node_modules/request/request.js:1167:12)
+34 verbose stack     at IncomingMessage.emit (events.js:129:20)
+34 verbose stack     at _stream_readable.js:908:16
+34 verbose stack     at process._tickCallback (node.js:355:11)
+35 verbose statusCode 403
+36 verbose pkgid unit
+37 verbose cwd /home/nico/Documents/unit/unit
+38 error Linux 3.19.0-22-generic
+39 error argv "/home/nico/.nvm/versions/node/v0.12.4/bin/node" "/home/nico/.nvm/versions/node/v0.12.4/bin/npm" "publish"
+40 error node v0.12.4
+41 error npm  v2.10.1
+42 error code E403
+43 error "You cannot publish over the previously published version 0.0.0. Try bumping the version to 1.0.0" : unit
+44 error If you need help, you may report this error at:
+44 error     <https://github.com/npm/npm/issues>
+45 verbose exit [ 1, true ]
